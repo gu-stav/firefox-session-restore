@@ -1,0 +1,15 @@
+{
+  "name": "firefox-session-restore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustav Pursche <pursche@posteo.de>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "colors.js": "^1.2.4",
+    "lodash": "^3.10.1"
+  }
+}
