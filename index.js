@@ -1,13 +1,16 @@
-var URL = '/Users/gustavpursche/Desktop/session.bak';
+#!/usr/bin/env node
 
+var _ = require('lodash');
 var colors = require('colors');
 var fs = require('fs');
-var _ = require('lodash');
+var program = require('commander');
 var url = require('url');
 var titleCache = [];
 var urlCache = [];
 
-fs.readFile(URL, function(e, fc) {
+program.parse(process.argv);
+
+fs.readFile(program.args[0], function(e, fc) {
   if(e) {
     throw e;
   }
